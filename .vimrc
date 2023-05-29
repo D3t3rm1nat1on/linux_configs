@@ -41,12 +41,16 @@ set background=dark
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-if !empty(glob("$HOME/.vim/.vim_plug.vim"))
-    source $HOME/.vim/.vim_plug.vim
+if filereadable($HOME.'/.vim/autoload/plug.vim')
+    if !empty(glob("$HOME/.vim/.vim_plug.vim"))
+        source $HOME/.vim/.vim_plug.vim
+    endif
 endif
 
-if !empty(glob("$HOME/.vim/.clang_format.vim"))
-    source $HOME/.vim/.clang_format.vim
+if executable('clang_format')
+    if !empty(glob("$HOME/.vim/.clang_format.vim"))
+        source $HOME/.vim/.clang_format.vim
+    endif
 endif
 
 
