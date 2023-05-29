@@ -1,0 +1,36 @@
+[user]
+    name = NAME
+    email = EMAIL
+[alias]
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    showgraph = log --graph --oneline --all
+    where = rev-parse --absolute-git-dir
+    co = checkout
+    ci = commit
+    st = status
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    report = hist --since=7.days --author='NAME'
+[core]
+    editor = vim
+[merge]
+    conflictstyle = diff3
+    tool = vimdiff
+[mergetool]
+    prompt = false
+[color]
+    ui = true
+[color "grep"]
+    linenumber = yellow
+    match = red bold
+    filename = cyan italic
+[color "status"]
+    untracked = blue bold italic
+
+[credential]
+	helper = cache
+[url "git@github.com:"]
+	insteadOf = https://github.com/
