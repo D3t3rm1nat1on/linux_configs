@@ -17,3 +17,9 @@ install clang-format:
 sudo apt install clang-format
 find / -name clang-format.py 2>/dev/null | head -1 | xargs -I @ sed -i "s#CLANG_FORMAT_PY#@#" .vim/.clang_format.vim
 ```
+apply config:
+```
+mkdir -p ~/config_dump
+(cd ~ && mv .bashrc .tmux.conf .vimrc .vim config_dump/)
+cp -r .bashrc .tmux.conf .vimrc .vim a ~/
+```
