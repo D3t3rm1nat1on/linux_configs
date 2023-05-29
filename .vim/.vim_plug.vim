@@ -2,7 +2,6 @@ call plug#begin("~/.vim/plugged")
 
 Plug 'terryma/vim-multiple-cursors'
 Plug 'gruvbox-community/gruvbox'
-Plug 'rickhowe/spotdiff'
 
 "CSS properties and color selector
 " Plug 'KabbAmine/vCoolor.vim'
