@@ -21,5 +21,5 @@ apply config:
 ```
 mkdir -p ~/config_dump
 (cd ~ && mv .bashrc .tmux.conf .vimrc .vim config_dump/)
-cp -r .bashrc .tmux.conf .vimrc .vim a ~/
+cp -r .bashrc .tmux.conf .vimrc .vim ~/
 ```
