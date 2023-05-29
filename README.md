@@ -20,6 +20,6 @@ find / -name clang-format.py 2>/dev/null | head -1 | xargs -I @ sed -i "s#CLANG_
 apply config:
 ```
 mkdir -p ~/config_dump
-(cd ~ && mv .bashrc .tmux.conf .vimrc .vim config_dump/)
+(cd ~ && cp -r .bashrc .tmux.conf .vimrc .vim config_dump/)
 cp -r .bashrc .tmux.conf .vimrc .vim ~/
 ```
