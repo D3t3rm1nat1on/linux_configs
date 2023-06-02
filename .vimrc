@@ -36,6 +36,7 @@ set cursorline
 set incsearch
 set formatoptions-=cro
 set background=dark
+set mouse=
 
 " install vim-plug
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
